@@ -306,6 +306,14 @@ app.post('/v1/chat/completions', async (req, res) => {
   }
 });
 
+// GET route for testing /v1/chat/completions (prevents 404 on GET)
+app.get('/v1/chat/completions', (req, res) => {
+  res.status(200).json({
+    message: "Endpoint is alive! Use POST requests to send chat completions.",
+    note: "This GET request is for testing only. Real chat requests must use POST."
+  });
+});
+
 // Catch-all for unsupported endpoints - MUST BE LAST
 app.all('*', (req, res) => {
   console.log(`404: ${req.method} ${req.path} not found`);
