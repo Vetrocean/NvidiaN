@@ -32,20 +32,20 @@ const MODEL_MAPPING = {
   // Fast / cheap
   'gpt-3.5-turbo': 'openai/gpt-oss-20b',
 
-  // Best balanced
-  'gpt-4o': 'mistralai/mistral-small-24b-instruct',
+  // 🔥 GOOD RP / EXPRESSIVE (your main)
+  'gpt-4o': 'deepseek-ai/deepseek-v3.1',
   'gpt-4-fast': 'mistralai/magistral-small-2506',
 
-  // Smarter but still usable speed
-  'gpt-4': 'nvidia/nemotron-3-nano-30b-a3b',
-  'gpt-4-turbo': 'deepseek-ai/deepseek-v3.1',
+  // 🧠 Stronger models
+  'gpt-4': 'deepseek-ai/deepseek-v3.1-terminus',
+  'gpt-4-turbo': 'deepseek-ai/deepseek-v3.2',
 
-  // Higher-end options
+  // 💎 High-end / wildcards
   'claude-3-sonnet': 'moonshotai/kimi-k2-5',
   'claude-3-opus': 'openai/gpt-oss-120b',
 
-  // Optional alt
-  'gemini-pro': 'mistralai/mistral-small-4-119b-2603'
+  // Extra
+  'gemini-pro': 'moonshotai/kimi-k2-5'
 };
 
 // Root endpoint
